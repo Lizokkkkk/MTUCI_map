@@ -1,0 +1,60 @@
+.li_7, .li_6, .li_5, .li_4, .li_3, .li_2, .li_1 {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 20px 10px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+}
+.menu ul {
+  width: 350px;
+  display: grid;
+  row-gap: 6px;
+}
+
+.li_1 {
+  background: rgb(215, 255, 131);
+  border-radius: 20px 20px 0 0;
+}
+
+.li_2 {
+  background: rgb(255, 180, 225);
+}
+
+.li_3 {
+  background: rgb(255, 212, 161);
+}
+
+.li_4 {
+  background: rgb(176, 67, 74);
+}
+
+.li_5 {
+  background: rgb(241, 158, 158);
+}
+
+.li_6 {
+  background: rgb(140, 165, 255);
+}
+
+.li_7 {
+  background: rgb(255, 252, 169);
+  border-radius: 0 0 20px 20px;
+}
+
+.map-tab-link {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(18, 18, 18);
+}/*# sourceMappingURL=menu.css.map */
