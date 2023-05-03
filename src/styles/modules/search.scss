@@ -1,0 +1,37 @@
+.pop_up {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    &.active {
+        display: block;
+    }
+    &_container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    &_body {
+        margin: 150px auto;
+        font-family: $text;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 44px;
+        width: 500px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 100px;
+        border: none;
+        text-align: start;
+        padding: 0px 25px;
+        position: relative;
+        &:focus {
+            outline: none;
+        }
+    }
+}
