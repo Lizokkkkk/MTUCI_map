@@ -1,5 +1,15 @@
 const links = document.querySelectorAll(".menu li"),
-      mapLinks = document.querySelectorAll(".map g");
+      mapLinks = document.querySelectorAll(".g");
+
+const requestData = (id) => {
+    fetch('../data.json')
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        location.href=`building.html?info=${data[id - 1].district}`;
+    })
+};
 
 links.forEach((item) => {
   item.addEventListener("mouseenter", (e) => {
@@ -15,7 +25,10 @@ links.forEach((item) => {
 
     mapLinks.forEach((el) => {
         if (el.getAttribute("id") != selfClass) {
-            el.style.display = "none";
+            // el.style.display = "none";
+            // el.style.filter = "url(#filter0_d_77_155)";
+            // el.style.-webkit-filter = "grayscale(100%)";
+            el.style.filter = "grayscale(100%)";
         }
     });
   });
@@ -32,11 +45,17 @@ links.forEach((item) => {
 
     mapLinks.forEach((el) => {
         if (el.getAttribute("id") != selfClass) {
-            el.style.display = "";
+            el.style.filter = "";
         }
     });
-
   });
+
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    let self = e.currentTarget;
+    let id = parseInt(self.dataset.id);
+    requestData(id);
+  })
 });
 
 mapLinks.forEach((item) => {
@@ -53,7 +72,7 @@ mapLinks.forEach((item) => {
   
       mapLinks.forEach((el) => {
           if (el.getAttribute("id") != selfClass) {
-              el.style.display = "none";
+            el.style.filter = "grayscale(100%)";
           }
       });
     });
@@ -70,9 +89,15 @@ mapLinks.forEach((item) => {
   
       mapLinks.forEach((el) => {
           if (el.getAttribute("id") != selfClass) {
-              el.style.display = "";
+            el.style.filter = "";
           }
       });
-  
     });
-  });
+
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        let self = e.currentTarget;
+        let id = parseInt(self.dataset.id);
+        requestData(id);
+    });
+});

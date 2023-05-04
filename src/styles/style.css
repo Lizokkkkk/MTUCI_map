@@ -61,10 +61,22 @@ header {
   background: transparent;
 }
 .pop_up_body {
-  position: relative;
-  margin: 0 auto;
-  background: transparent;
+  margin: 150px auto;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
   width: 500px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 100px;
+  border: none;
+  text-align: start;
+  padding: 0px 25px;
+  position: relative;
+}
+.pop_up_body:focus {
+  outline: none;
 }
 .pop_up_input {
   font-family: "Rubik";
@@ -102,58 +114,6 @@ header {
   transform: scale(100%);
 }
 
-.pop_up {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-.pop_up.active {
-  display: block;
-}
-.pop_up_container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
-.pop_up_body {
-  margin: 150px auto;
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  width: 500px;
-  height: 60px;
-  background-color: #fff;
-  border-radius: 100px;
-  border: none;
-  text-align: start;
-  padding: 0px 25px;
-  position: relative;
-}
-.pop_up_body:focus {
-  outline: none;
-}
-
-.map {
-  position: relative;
-  text-align: center;
-}
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-}
-
 .li_7, .li_6, .li_5, .li_4, .li_3, .li_2, .li_1 {
   font-family: "Rubik";
   font-weight: 400;
@@ -168,6 +128,10 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
+}
+
+.map {
+  text-align: center;
 }
 
 .menu {
