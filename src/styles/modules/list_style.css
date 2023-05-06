@@ -1,0 +1,38 @@
+.li_7, .li_6, .li_5, .li_4, .li_3, .li_2, .li_1 {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 20px 15px;
+  list-style-type: none;
+  color: rgb(18, 18, 18);
+  cursor: pointer;
+}
+
+.li_1 {
+  background: rgb(215, 255, 131);
+}
+
+.li_2 {
+  background: rgb(255, 180, 225);
+}
+
+.li_3 {
+  background: rgb(255, 212, 161);
+}
+
+.li_4 {
+  background: rgb(176, 67, 74);
+}
+
+.li_5 {
+  background: rgb(241, 158, 158);
+}
+
+.li_6 {
+  background: rgb(140, 165, 255);
+}
+
+.li_7 {
+  background: rgb(255, 252, 169);
+}/*# sourceMappingURL=list_style.css.map */

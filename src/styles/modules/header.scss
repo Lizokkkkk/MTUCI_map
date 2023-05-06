@@ -34,6 +34,7 @@ header {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         &:hover {
+            transition: 0.2s;
             background-color: rgba(67, 52, 125, 1);
             color: rgba(237, 237, 237, 1);
             & img {content: url(../img/search_1.svg)};

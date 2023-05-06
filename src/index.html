@@ -7,23 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTUCI</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
         <a href="#" class="header_logo">
-            <img src="../img/Logo.svg" alt="">
+            <img src="img/Logo.svg" alt="">
         </a>
 
-        <button class="search_btn" id="open_pop_up">Поикс...<img class="search_img" src="../img/search.svg"
+        <button class="search_btn" id="open_pop_up">Поикс...<img class="search_img" src="img/search.svg"
                 alt="img"></button>
 
         <div class="pop_up" id="pop_up">
             <div class="pop_up_container" id="pop_up_container">
                 <form id="pop_up_body" class="pop_up_body" action="" method="get">
-                    <input id="pop_up_input" class="pop_up_input" type="text" placeholder="Поиск...">
-                    <button id="pop_up_btn" type="submit" class="pop_up_btn"></button>
+                    <input id="pop_up_input" class="pop_up_input" type="text" placeholder="Поиск..." autocomplete="off">
+                    <button id="pop_up_btn" type="button" class="pop_up_btn"></button>
+                    <ul class="pop_up_menu"></ul>
                 </form>
             </div>
         </div>
@@ -134,36 +135,23 @@
                 </g>
             </svg>
 
+
         </div>
         <div class="menu">
             <ul>
-                <li class="li_1" data-id="1">
-                    <a href="#" class="map-tab-link">Лабораторный корпус</a>
-                </li>
-                <li class="li_2" data-id="2">
-                    <a href="#" class="map-tab-link">Конгресс-центр</a>
-                </li>
-                <li class="li_3" data-id="3">
-                    <a href="#" class="map-tab-link">Главный корпус</a>
-                </li>
-                <li class="li_4" data-id="4">
-                    <a href="#" class="map-tab-link">Музей истории электросвязи</a>
-                </li>
-                <li class="li_5" data-id="5">
-                    <a href="#" class="map-tab-link">ДИСиТ</a>
-                </li>
-                <li class="li_6" data-id="6">
-                    <a href="#" class="map-tab-link">Библиотечный корпус</a>
-                </li>
-                <li class="li_7" data-id="7">
-                    <a href="#" class="map-tab-link">УЛК (Учебно-лабораторный корпус)</a>
-                </li>
+                <li class="li_1" data-id="1">Лабораторный корпус</li>
+                <li class="li_2" data-id="2">Конгресс-центр</li>
+                <li class="li_3" data-id="3">Главный корпус</li>
+                <li class="li_4" data-id="4">Музей истории электросвязи</li>
+                <li class="li_5" data-id="5">ДИСиТ</li>
+                <li class="li_6" data-id="6">Библиотечный корпус</li>
+                <li class="li_7" data-id="7">УЛК (Учебно-лабораторный корпус)</li>
             </ul>
         </div>
     </main>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/map.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>

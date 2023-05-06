@@ -109,31 +109,6 @@ header {
   display: block;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-}
-
-.map {
-  text-align: center;
-}
-
-.menu {
-  position: relative;
-}
-.menu ul {
-  width: 400px;
-  display: grid;
-  row-gap: 3px;
-}
-.menu ul li:first-child {
-  border-radius: 20px 20px 0 0;
-}
-.menu ul li:last-child {
-  border-radius: 0 0 20px 20px;
-}
-
 .li_7, .li_6, .li_5, .li_4, .li_3, .li_2, .li_1 {
   font-family: "Rubik";
   font-weight: 400;
@@ -196,4 +171,13 @@ main {
 }
 .pop_up_menu li:last-child {
   border-radius: 0 0 50px 50px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#info {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 19px;
+  color: #EDEDED;
+  text-align: center;
+}/*# sourceMappingURL=page2.css.map */

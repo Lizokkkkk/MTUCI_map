@@ -31,6 +31,7 @@ header {
   align-items: center;
 }
 .search_btn:hover {
+  transition: 0.2s;
   background-color: rgb(67, 52, 125);
   color: rgb(237, 237, 237);
 }

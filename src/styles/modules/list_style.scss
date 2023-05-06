@@ -1,0 +1,38 @@
+%li_style {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 20px 15px;
+    list-style-type: none;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+}
+.li_1 {
+    @extend %li_style;
+    background: rgba(215, 255, 131, 1);
+}     
+.li_2 {
+    @extend %li_style;
+    background: rgba(255, 180, 225, 1);
+}
+.li_3 {
+    @extend %li_style;
+    background: rgba(255, 212, 161, 1);
+}
+.li_4 {
+    @extend %li_style;
+    background: rgba(176, 67, 74, 1);
+}
+.li_5 {
+    @extend %li_style;
+    background: rgba(241, 158, 158, 1);
+}
+.li_6 {
+    @extend %li_style;
+    background: rgba(140, 165, 255, 1);
+}
+.li_7 {
+    @extend %li_style;
+    background: rgba(255, 252, 169, 1);
+}
