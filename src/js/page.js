@@ -107,23 +107,18 @@ function displayMenu() {
 
 input.addEventListener("input", displayMenu);
 
-// function sendInput() {
-//   if (buildingName.includes(input.value)) {
-//     document.location.href = `http://127.0.0.1:5501/html/building.html?info=g`;
-//   } else {
-//     location.href = `../building.html?info=nvnvn`;
-//   }
-// }
+function sendInput() {
+  if (buildingName.includes(input.value)) {
+    location.href = `http://127.0.0.1:5501/src/html/building.html?info=${input.value}`;
+  } else {
+    location.href = `http://127.0.0.1:5501/src/html/building.html?info=404`;
+  }
+}
 
-searchBtn.addEventListener("click", () => {
-  location.replace("http://127.0.0.1:5501/html/building.html?info=g");
-});
+searchBtn.addEventListener("click", sendInput);
 input.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     e.preventDefault();
     searchBtn.click();
   }
 });
-
-console.log(location.href);
-// http://127.0.0.1:5501/html/building.html

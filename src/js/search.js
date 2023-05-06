@@ -32,7 +32,7 @@ const building = [],
   buildingName = [],
   searchMenu = document.querySelector(".pop_up_menu");
 
-fetch("../data.json")
+fetch("src/data.json")
   .then((response) => {
     return response.json();
   })
@@ -99,9 +99,9 @@ input.addEventListener("input", displayMenu);
 
 function sendInput() {
   if (buildingName.includes(input.value)) {
-    location.href = `http://127.0.0.1:5501/html/building.html?info=${input.value}`;
+    location.href = `http://127.0.0.1:5501/src/html/building.html?info=${input.value}`;
   } else {
-    location.href = `http://127.0.0.1:5501/html/building.html?info=404`;
+    location.href = `http://127.0.0.1:5501/src/html/building.html?info=404`;
   }
 }
 

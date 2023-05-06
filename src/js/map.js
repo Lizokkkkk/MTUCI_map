@@ -2,12 +2,12 @@ const links = document.querySelectorAll(".menu li"),
   mapLinks = document.querySelectorAll(".g");
 
 const requestData = (id) => {
-  fetch("../data.json")
+  fetch("src/data.json")
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      location.href = `html/building.html?info=${data[id - 1].district}`;
+      location.href = `/src/html/building.html?info=${data[id - 1].district}`;
     });
 };
 
