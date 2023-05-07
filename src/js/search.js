@@ -99,9 +99,9 @@ input.addEventListener("input", displayMenu);
 
 function sendInput() {
   if (buildingName.includes(input.value)) {
-    location.href = `http://127.0.0.1:5501/src/html/building.html?info=${input.value}`;
+    location.href = `https://lizokkkkk.github.io/MTUCI_map/src/html/building.html?info=${input.value}`;
   } else {
-    location.href = `http://127.0.0.1:5501/src/html/building.html?info=404`;
+    location.href = `https://lizokkkkk.github.io/MTUCI_map/src/html/building.html?info=404`;
   }
 }
 
